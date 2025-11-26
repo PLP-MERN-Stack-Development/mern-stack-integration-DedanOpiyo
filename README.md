@@ -4,7 +4,7 @@ This assignment focuses on building a full-stack MERN (MongoDB, Express.js, Reac
 
 ## Assignment Overview
 
-You will build a blog application with the following features:
+This is a blog application with the following features:
 1. RESTful API with Express.js and MongoDB
 2. React front-end with component architecture
 3. Full CRUD functionality for blog posts
@@ -39,7 +39,7 @@ mern-blog/
 
 ## Getting Started
 
-1. Accept the GitHub Classroom assignment invitation
+1. Accepss the GitHub repo
 2. Clone your personal repository that was created by GitHub Classroom
 3. Follow the setup instructions in the `Week4-Assignment.md` file
 4. Complete the tasks outlined in the assignment
@@ -52,6 +52,12 @@ mern-blog/
   - Configuration files
   - Sample models and components
 
+## Screenshots of the application
+![App Screenshot - Home page](./assets/Screenshot (246).png)
+![App Screenshot](./assets/Screenshot (239).png)
+![App Screenshot](./assets/Screenshot (242).png)
+![App Screenshot](./assets/Screenshot (243).png)
+
 ## Requirements
 
 - Node.js (v18 or higher)
@@ -59,15 +65,81 @@ mern-blog/
 - npm or yarn
 - Git
 
-## Submission
-
 Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
 
-1. Complete both the client and server portions of the application
-2. Implement all required API endpoints
-3. Create the necessary React components and hooks
-4. Document your API and setup process in the README.md
-5. Include screenshots of your working application
+### Project Setup
+- Set up a project with a clear directory structure for both client and server
+- Configured MongoDB connection using Mongoose
+- Set up Express.js server with necessary middleware
+- Created a React front-end using Vite and configure proxy for API calls
+- Implemented environment variables for configuration management
+
+### Back-End Development
+- Designed and implemented a RESTful API for a blog application with the following endpoints:
+  - `GET /api/posts`: Get all blog posts
+  - `GET /api/posts/:id`: Get a specific blog post
+  - `POST /api/posts`: Create a new blog post
+  - `PUT /api/posts/:id`: Update an existing blog post
+  - `DELETE /api/posts/:id`: Delete a blog post
+  - `GET /api/categories`: Get all categories
+  - `POST /api/categories`: Create a new category
+- Created Mongoose models for `Post` and `Category` with proper relationships
+- Implemented input validation using a library like Joi or express-validator
+- Added error handling middleware for API routes
+
+### Front-End Development
+- Created React components for:
+  - Post list view
+  - Single post view
+  - Create/edit post form
+  - Navigation and layout
+- Implemented React Router for navigation between different views
+- Used React hooks for state management (useState, useEffect, useContext)
+- Created a custom hook for API calls
+
+### Integration and Data Flow
+- Implemented API service in React to communicate with the back-end
+- Set up state management for posts and categories
+- Created forms with proper validation for creating and editing posts
+- Implemented optimistic UI updates for better user experience
+- Handled loading and error states for API calls
+
+### Advanced Features
+- Added user authentication (registration, login, protected routes)
+- Implemented image uploads for blog post featured images
+- Added pagination for the post list
+- Implemented searching and filtering functionality
+- Added comments feature for blog posts
+
+## 🧪 Outcome
+- A fully functional MERN stack blog application
+- Proper integration between MongoDB, Express.js, React.js, and Node.js
+- Clean code organization with separation of concerns
+- Responsive UI with good user experience
+- Implementation of at least one advanced feature
+
+## 🛠️ Setup
+1. Make sure you have Node.js (v18+) and MongoDB installed
+2. Clone the starter code repository
+3. Install server dependencies:
+   ```
+   cd server
+   npm install
+   ```
+4. Install client dependencies:
+   ```
+   cd client
+   npm install
+   ```
+5. Set up environment variables as described in the `.env.example` files
+6. Start the development servers:
+   ```
+   # In the server directory
+   npm run dev
+   
+   # In the client directory
+   npm run dev
+   ```
 
 ## Resources
 
